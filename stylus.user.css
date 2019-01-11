@@ -1,9 +1,10 @@
 /* ==UserStyle==
 @name           Material Palenight Stylus
 @namespace      https://github.com/Brettm12345/material-palenight-stylus
-@version        1.0.0
+@version        1.0.1
 @description    A user style for the stylus extension based on the material palenight vscode theme
 @author         Brettm12345
+@preprocessor 	uso
 @updateURL      https://raw.githubusercontent.com/Brettm12345/material-palenight-stylus/master/stylus.user.css
 @var text code-font 'Code Font' "Menlo"
 @var text code-font-size 'Code Font Size' "16px"
@@ -36,9 +37,9 @@
   /* CODE AREA */
   .CodeMirror {
     background: var(--bg1);
-    font-family: var(--code-font), Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-    font-size: var(--code-font-size);
-    font-weight: var(--code-font-weight);
+    font-family: '/*[[code-font]]*/', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    font-size: /*[[code-font-size]]*/;
+    font-weight: /*[[code-font-weight]]*/;
   }
 
   .CodeMirror-activeline-background {
@@ -110,11 +111,11 @@
   }
 
   .CodeMirror-cursor {
-    border-left: 1px solid var(--cursor-color) !important;
+    border-left: 1px solid /*[[cursor-color]]*/ !important;
   }
 
   .cm-fat-cursor .CodeMirror-cursor {
-    background: var(--cursor-color) !important;
+    background: /*[[cursor-color]]*/ !important;
   }
 
   div.CodeMirror-selected {
@@ -129,15 +130,15 @@
   body,
   html {
     background: var(--bg0);
-    font-family: var(--ui-font), 'Roboto', 'Open Sans', Arial, sans-serif;
-    font-weight: var(--ui-font-weight);
-    font-size: var(--ui-font-size);
+    font-family: '/*[[ui-font]]*/', 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-weight: /*[[ui-font-weight]]*/;
+    font-size: /*[[ui-font-size]]*/;
   }
 
   #sections > div > label,
   #sections h2 {
     color: var(--fg);
-    font-family: var(--ui-font), 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-family: '/*[[ui-font]]*/', 'Roboto', 'Open Sans', Arial, sans-serif;
     font-weight: 400;
   }
 
@@ -168,7 +169,7 @@
   .applies-to li {
     color: var(--fg1);
     font-weight: 400;
-    font-family: var(--ui-font), 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-family: '/*[[ui-font]]*/', 'Roboto', 'Open Sans', Arial, sans-serif;
   }
 
   #header label {
@@ -182,7 +183,7 @@
     border: 1px solid var(--bg0);
     background: var(--bg0);
     color: var(--fg1) !important;
-    font-family: var(--ui-font), 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-family: '/*[[ui-font]]*/', 'Roboto', 'Open Sans', Arial, sans-serif;
   }
 
   #header .filter-selection label {
@@ -225,7 +226,7 @@
     border-radius: 5px;
     cursor: pointer;
     padding: 8px;
-    font-family: var(--ui-font), 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-family: '/*[[ui-font]]*/', 'Roboto', 'Open Sans', Arial, sans-serif;
   }
 
   #header button:hover {
@@ -284,7 +285,7 @@
     border-radius: 5px;
     cursor: pointer;
     margin-left: 5px;
-    font-family: var(--ui-font), 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-family: '/*[[ui-font]]*/', 'Roboto', 'Open Sans', Arial, sans-serif;
   }
 
   .edit-actions button:hover {
@@ -299,12 +300,12 @@
     cursor: pointer;
     border-radius: 5px;
     color: var(--fg1);
-    font-family: var(--ui-font), 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-family: '/*[[ui-font]]*/', 'Roboto', 'Open Sans', Arial, sans-serif;
   }
 
   .applies-to label {
     color: var(--fg1);
-    font-family: var(--ui-font), 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-family: '/*[[ui-font]]*/', 'Roboto', 'Open Sans', Arial, sans-serif;
   }
 
   .applies-to li > :not(button):not(.select-resizer) {
