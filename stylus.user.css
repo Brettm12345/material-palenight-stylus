@@ -10,6 +10,7 @@
 @var text ui-font 'UI Font' "Noto Sans"
 @var text ui-font-size 'UI Font Size' "12px"
 @var text ui-font-weight 'UI Font Weight' "500"
+@var color cursor-color 'Cursor Color' "#c792ea"
 ==/UserStyle== */
 
 @-moz-document regexp('chrome-extension://.*'), regexp('moz-extension://.*') {
@@ -108,7 +109,9 @@
   }
 
   .CodeMirror-cursor {
-    border-left: 1px solid var(--text) !important;
+    border-left: 1px solid var(--cursor-color) !important;
+  }
+
   }
 
   div.CodeMirror-selected {
