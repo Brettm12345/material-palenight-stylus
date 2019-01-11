@@ -8,6 +8,7 @@
 @var text code-font-size 'Code Font Size' "16px"
 @var text code-font-weight 'Code Font Weight' "500"
 @var text ui-font 'UI Font' "Noto Sans"
+@var text ui-font-size 'UI Font Size' "12px"
 @var text ui-font-weight 'UI Font Weight' "500"
 ==/UserStyle== */
 
@@ -33,9 +34,9 @@
   /* CODE AREA */
   .CodeMirror {
     background: var(--bg1);
-    font-family: '/*[[code-font]]*/', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-    font-size: code-font-size;
-    font-weight: code-font-weight;
+    font-family: var(--code-font), Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    font-size: var(--code-font-size);
+    font-weight: var(--code-font-weight);
   }
 
   .CodeMirror-activeline-background {
@@ -122,7 +123,9 @@
   body,
   html {
     background: var(--bg0);
-    font-family: '/*[[ui-font]]*/', 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-family: var(--ui-font), 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-weight: var(--ui-font-weight);
+    font-size: var(--ui-font-size);
   }
 
   #sections > div > label,
@@ -173,7 +176,7 @@
     border: 1px solid var(--bg0);
     background: var(--bg0);
     color: var(--fg1) !important;
-    font-family: '/*[[ui-font]]*/', 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-family: var(--ui-font), 'Roboto', 'Open Sans', Arial, sans-serif;
   }
 
   #header .filter-selection label {
@@ -216,7 +219,7 @@
     border-radius: 5px;
     cursor: pointer;
     padding: 8px;
-    font-family: '/*[[ui-font]]*/', 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-family: var(--ui-font), 'Roboto', 'Open Sans', Arial, sans-serif;
   }
 
   #header button:hover {
@@ -275,7 +278,7 @@
     border-radius: 5px;
     cursor: pointer;
     margin-left: 5px;
-    font-family: '/*[[ui-font]]*/', 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-family: var(--ui-font), 'Roboto', 'Open Sans', Arial, sans-serif;
   }
 
   .edit-actions button:hover {
@@ -290,12 +293,12 @@
     cursor: pointer;
     border-radius: 5px;
     color: var(--fg1);
-    font-family: '/*[[ui-font]]*/', 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-family: var(--ui-font), 'Roboto', 'Open Sans', Arial, sans-serif;
   }
 
   .applies-to label {
     color: var(--fg1);
-    font-family: '/*[[ui-font]]*/', 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-family: var(--ui-font), 'Roboto', 'Open Sans', Arial, sans-serif;
   }
 
   .applies-to li > :not(button):not(.select-resizer) {
