@@ -1,4 +1,5 @@
 # Material Palenight Stylus
+[![Install directly with Stylus](https://raw.githubusercontent.com/Brettm12345/material-palenight-stylus/master/stylus.user.css)]()
 
 <img src="preview.png" width="100%"></img>
 
