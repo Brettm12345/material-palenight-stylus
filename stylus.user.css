@@ -132,7 +132,7 @@
   #sections > div > label,
   #sections h2 {
     color: var(--fg);
-    font-family: '/*[[ui-font]]*/', 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-family: var(--ui-font), 'Roboto', 'Open Sans', Arial, sans-serif;
     font-weight: 400;
   }
 
@@ -163,7 +163,7 @@
   .applies-to li {
     color: var(--fg1);
     font-weight: 400;
-    font-family: '/*[[ui-font]]*/', 'Roboto', 'Open Sans', Arial, sans-serif;
+    font-family: var(--ui-font), 'Roboto', 'Open Sans', Arial, sans-serif;
   }
 
   #header label {
