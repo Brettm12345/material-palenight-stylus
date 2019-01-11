@@ -4,6 +4,7 @@
 @version        1.0.0
 @description    A user style for the stylus extension based on the material palenight vscode theme
 @author         Brettm12345
+@updateURL      https://raw.githubusercontent.com/Brettm12345/material-palenight-stylus/master/stylus.user.css
 @var text code-font 'Code Font' "Menlo"
 @var text code-font-size 'Code Font Size' "16px"
 @var text code-font-weight 'Code Font Weight' "500"
