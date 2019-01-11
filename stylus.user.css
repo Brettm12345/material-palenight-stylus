@@ -112,6 +112,8 @@
     border-left: 1px solid var(--cursor-color) !important;
   }
 
+  .cm-fat-cursor .CodeMirror-cursor {
+    background: var(--cursor-color) !important;
   }
 
   div.CodeMirror-selected {
